@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L8G-zE-F6u">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="C0m-os-JuS">
+            <objects>
+                <viewController id="L8G-zE-F6u" customClass="HomeVC" customModule="LinkinParkRX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cbL-5Y-HhF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="OHd-bJ-E6u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1XW-vV-61m">
+                                <rect key="frame" x="8" y="32" width="48" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Kj-S0-aQH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="KkO-Q6-mXd"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="dJr-bC-Dyk" kind="embed" id="oKD-yT-GIn"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvl-Og-1u8">
+                                <rect key="frame" x="8" y="242" width="42.5" height="24"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KtD-GX-kfK">
+                                <rect key="frame" x="0.0" y="274" width="375" height="393"/>
+                                <connections>
+                                    <segue destination="hhf-zp-75D" kind="embed" id="uwr-X5-cA4"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GMb-UN-FLx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cvl-Og-1u8" firstAttribute="leading" secondItem="GMb-UN-FLx" secondAttribute="leading" constant="8" id="7i1-zJ-psO"/>
+                            <constraint firstItem="cvl-Og-1u8" firstAttribute="top" secondItem="9Kj-S0-aQH" secondAttribute="bottom" constant="8" id="Cq7-ec-sSX"/>
+                            <constraint firstItem="GMb-UN-FLx" firstAttribute="trailing" secondItem="KtD-GX-kfK" secondAttribute="trailing" id="D5j-sx-Vxn"/>
+                            <constraint firstItem="OHd-bJ-E6u" firstAttribute="top" secondItem="cbL-5Y-HhF" secondAttribute="top" id="EF3-dB-dJi"/>
+                            <constraint firstItem="GMb-UN-FLx" firstAttribute="bottom" secondItem="KtD-GX-kfK" secondAttribute="bottom" id="HAx-Qz-6k2"/>
+                            <constraint firstItem="KtD-GX-kfK" firstAttribute="leading" secondItem="GMb-UN-FLx" secondAttribute="leading" id="Ivi-Rt-OwA"/>
+                            <constraint firstItem="GMb-UN-FLx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1XW-vV-61m" secondAttribute="trailing" constant="8" id="LOH-1J-Pln"/>
+                            <constraint firstItem="KtD-GX-kfK" firstAttribute="top" secondItem="cvl-Og-1u8" secondAttribute="bottom" constant="8" id="Qfd-ZI-bWX"/>
+                            <constraint firstAttribute="bottom" secondItem="OHd-bJ-E6u" secondAttribute="bottom" id="Sb9-hT-4oM"/>
+                            <constraint firstItem="GMb-UN-FLx" firstAttribute="trailing" secondItem="9Kj-S0-aQH" secondAttribute="trailing" id="Tj8-n9-S11"/>
+                            <constraint firstItem="9Kj-S0-aQH" firstAttribute="leading" secondItem="GMb-UN-FLx" secondAttribute="leading" id="heH-0t-3bk"/>
+                            <constraint firstItem="OHd-bJ-E6u" firstAttribute="leading" secondItem="GMb-UN-FLx" secondAttribute="leading" id="iAg-ZC-Sfy"/>
+                            <constraint firstItem="9Kj-S0-aQH" firstAttribute="top" secondItem="1XW-vV-61m" secondAttribute="bottom" constant="8" id="iqb-dJ-03U"/>
+                            <constraint firstItem="1XW-vV-61m" firstAttribute="leading" secondItem="GMb-UN-FLx" secondAttribute="leading" constant="8" id="iza-G2-wKy"/>
+                            <constraint firstItem="GMb-UN-FLx" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cvl-Og-1u8" secondAttribute="trailing" constant="8" id="kFW-CV-Btc"/>
+                            <constraint firstItem="1XW-vV-61m" firstAttribute="top" secondItem="GMb-UN-FLx" secondAttribute="top" constant="32" id="lzy-wA-jnp"/>
+                            <constraint firstItem="OHd-bJ-E6u" firstAttribute="trailing" secondItem="GMb-UN-FLx" secondAttribute="trailing" id="wMU-Tr-zYF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumsVCView" destination="9Kj-S0-aQH" id="8XT-VN-S0R"/>
+                        <outlet property="tracksVCView" destination="KtD-GX-kfK" id="7lg-dE-0lT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NH7-og-4sy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="212" y="180.35982008995504"/>
+        </scene>
+        <!--Albums Collection ViewVC-->
+        <scene sceneID="BC3-54-Fx0">
+            <objects>
+                <viewController storyboardIdentifier="AlbumsCollectionViewVC" id="dJr-bC-Dyk" customClass="AlbumsCollectionViewVC" customModule="LinkinParkRX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LYP-aE-JFB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c5D-hm-J99">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UoO-SE-bI2">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b7Y-ZE-3uo"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumsCollectionView" destination="c5D-hm-J99" id="MPZ-BN-It9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uOc-1h-WXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.60000000000002" y="21.589205397301352"/>
+        </scene>
+        <!--Tracks Table ViewVC-->
+        <scene sceneID="BLd-NH-2bL">
+            <objects>
+                <viewController storyboardIdentifier="TracksTableViewVC" id="hhf-zp-75D" customClass="TracksTableViewVC" customModule="LinkinParkRX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3o-Dq-J6p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="M8c-vJ-4hS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="393"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UtO-wb-aqK"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M8c-vJ-4hS" firstAttribute="top" secondItem="UtO-wb-aqK" secondAttribute="top" id="6py-Jb-iYw"/>
+                            <constraint firstItem="M8c-vJ-4hS" firstAttribute="bottom" secondItem="UtO-wb-aqK" secondAttribute="bottom" id="KzV-y1-ytw"/>
+                            <constraint firstItem="M8c-vJ-4hS" firstAttribute="trailing" secondItem="UtO-wb-aqK" secondAttribute="trailing" id="eoo-Ja-MIj"/>
+                            <constraint firstItem="M8c-vJ-4hS" firstAttribute="leading" secondItem="UtO-wb-aqK" secondAttribute="leading" id="vWb-NK-3sg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tracksTableView" destination="M8c-vJ-4hS" id="p8z-zJ-XjD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pvI-nd-qLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958" y="327"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1080" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

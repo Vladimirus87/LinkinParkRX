@@ -3,27 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1220F5025CBFFEE00F2D594 /* TrackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F4E25CBFFEE00F2D594 /* TrackTableViewCell.swift */; };
+		B1220F5125CBFFEE00F2D594 /* TrackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1220F4F25CBFFEE00F2D594 /* TrackTableViewCell.xib */; };
+		B1220F5525CC000900F2D594 /* AlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F5325CC000900F2D594 /* AlbumCollectionViewCell.swift */; };
+		B1220F5625CC000900F2D594 /* AlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1220F5425CC000900F2D594 /* AlbumCollectionViewCell.xib */; };
+		B1220F5D25CC01C800F2D594 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F5C25CC01C800F2D594 /* Track.swift */; };
+		B1220F6725CC048500F2D594 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F6625CC048500F2D594 /* Album.swift */; };
+		B1220F6E25CC069A00F2D594 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F6C25CC05EE00F2D594 /* Network.swift */; };
+		B1220F7025CC069D00F2D594 /* ReactiveExtensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F6A25CC057E00F2D594 /* ReactiveExtensiones.swift */; };
+		B1220F7225CC06A000F2D594 /* Extensiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F6B25CC057E00F2D594 /* Extensiones.swift */; };
+		B1220F7525CC076A00F2D594 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F7425CC076A00F2D594 /* HomeViewModel.swift */; };
+		B1220F7825CC0B4B00F2D594 /* ErrorInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F7725CC0B4B00F2D594 /* ErrorInfo.swift */; };
+		B1220F7E25CC0C5400F2D594 /* TracksTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F7D25CC0C5400F2D594 /* TracksTableViewVC.swift */; };
+		B1220F8225CC0C7000F2D594 /* AlbumsCollectionViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F8125CC0C7000F2D594 /* AlbumsCollectionViewVC.swift */; };
+		B1220F8725CC12EA00F2D594 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F8625CC12EA00F2D594 /* MessageView.swift */; };
+		B1220F8B25CC131600F2D594 /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1220F8525CC12EA00F2D594 /* MessageView.xib */; };
+		B1220F8E25CC14FE00F2D594 /* LinkinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1220F8D25CC14FE00F2D594 /* LinkinData.swift */; };
 		B13F1AA625CBF43C009A5FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F1AA525CBF43C009A5FCC /* AppDelegate.swift */; };
 		B13F1AA825CBF43C009A5FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F1AA725CBF43C009A5FCC /* SceneDelegate.swift */; };
-		B13F1AAA25CBF43C009A5FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F1AA925CBF43C009A5FCC /* ViewController.swift */; };
-		B13F1AAD25CBF43C009A5FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13F1AAB25CBF43C009A5FCC /* Main.storyboard */; };
 		B13F1AAF25CBF43D009A5FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B13F1AAE25CBF43D009A5FCC /* Assets.xcassets */; };
 		B13F1AB225CBF43D009A5FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13F1AB025CBF43D009A5FCC /* LaunchScreen.storyboard */; };
+		B13F1ABB25CBF471009A5FCC /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B13F1ABA25CBF471009A5FCC /* ReadMe.rtf */; };
+		B13F1AD325CBFAC5009A5FCC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13F1AD225CBFAC5009A5FCC /* Home.storyboard */; };
+		B13F1ADC25CBFB6F009A5FCC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13F1ADB25CBFB6F009A5FCC /* HomeVC.swift */; };
+		B8517657ACE46A23855AEFFF /* Pods_LinkinParkRX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9A1AD00BEECE5828BD284A /* Pods_LinkinParkRX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		343B98C5C00F9EA3A919438A /* Pods-LinkinParkRX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkinParkRX.debug.xcconfig"; path = "Target Support Files/Pods-LinkinParkRX/Pods-LinkinParkRX.debug.xcconfig"; sourceTree = "<group>"; };
+		3D9A1AD00BEECE5828BD284A /* Pods_LinkinParkRX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkinParkRX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1220F4E25CBFFEE00F2D594 /* TrackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTableViewCell.swift; sourceTree = "<group>"; };
+		B1220F4F25CBFFEE00F2D594 /* TrackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackTableViewCell.xib; sourceTree = "<group>"; };
+		B1220F5325CC000900F2D594 /* AlbumCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		B1220F5425CC000900F2D594 /* AlbumCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		B1220F5C25CC01C800F2D594 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Track.swift; path = ../../../../Track.swift; sourceTree = "<group>"; };
+		B1220F6625CC048500F2D594 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		B1220F6A25CC057E00F2D594 /* ReactiveExtensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtensiones.swift; sourceTree = "<group>"; };
+		B1220F6B25CC057E00F2D594 /* Extensiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensiones.swift; sourceTree = "<group>"; };
+		B1220F6C25CC05EE00F2D594 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		B1220F7425CC076A00F2D594 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		B1220F7725CC0B4B00F2D594 /* ErrorInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorInfo.swift; sourceTree = "<group>"; };
+		B1220F7D25CC0C5400F2D594 /* TracksTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewVC.swift; sourceTree = "<group>"; };
+		B1220F8125CC0C7000F2D594 /* AlbumsCollectionViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCollectionViewVC.swift; sourceTree = "<group>"; };
+		B1220F8525CC12EA00F2D594 /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		B1220F8625CC12EA00F2D594 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		B1220F8D25CC14FE00F2D594 /* LinkinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkinData.swift; sourceTree = "<group>"; };
 		B13F1AA225CBF43C009A5FCC /* LinkinParkRX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkinParkRX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B13F1AA525CBF43C009A5FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B13F1AA725CBF43C009A5FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B13F1AA925CBF43C009A5FCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B13F1AAC25CBF43C009A5FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B13F1AAE25CBF43D009A5FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B13F1AB125CBF43D009A5FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B13F1AB325CBF43D009A5FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B13F1ABA25CBF471009A5FCC /* ReadMe.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
+		B13F1AD225CBFAC5009A5FCC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B13F1ADB25CBFB6F009A5FCC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		D18B65BAE1F778B7BEBA50D2 /* Pods-LinkinParkRX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkinParkRX.release.xcconfig"; path = "Target Support Files/Pods-LinkinParkRX/Pods-LinkinParkRX.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8517657ACE46A23855AEFFF /* Pods_LinkinParkRX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD0F57C2679DF11F60A63F71 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				343B98C5C00F9EA3A919438A /* Pods-LinkinParkRX.debug.xcconfig */,
+				D18B65BAE1F778B7BEBA50D2 /* Pods-LinkinParkRX.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1220F5925CC01A100F2D594 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B1220F4E25CBFFEE00F2D594 /* TrackTableViewCell.swift */,
+				B1220F4F25CBFFEE00F2D594 /* TrackTableViewCell.xib */,
+				B1220F5325CC000900F2D594 /* AlbumCollectionViewCell.swift */,
+				B1220F5425CC000900F2D594 /* AlbumCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B1220F5B25CC01B300F2D594 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1220F5C25CC01C800F2D594 /* Track.swift */,
+				B1220F6625CC048500F2D594 /* Album.swift */,
+				B1220F7725CC0B4B00F2D594 /* ErrorInfo.swift */,
+				B1220F8D25CC14FE00F2D594 /* LinkinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1220F6925CC056E00F2D594 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B1220F6B25CC057E00F2D594 /* Extensiones.swift */,
+				B1220F6A25CC057E00F2D594 /* ReactiveExtensiones.swift */,
+				B1220F6C25CC05EE00F2D594 /* Network.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		B1220F8925CC12F000F2D594 /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				B1220F8625CC12EA00F2D594 /* MessageView.swift */,
+				B1220F8525CC12EA00F2D594 /* MessageView.xib */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
 		B13F1A9925CBF43C009A5FCC = {
 			isa = PBXGroup;
 			children = (
+				B13F1ABA25CBF471009A5FCC /* ReadMe.rtf */,
 				B13F1AA425CBF43C009A5FCC /* LinkinParkRX */,
 				B13F1AA325CBF43C009A5FCC /* Products */,
+				AD0F57C2679DF11F60A63F71 /* Pods */,
+				E6B3B6F2306477F48E3415FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +148,86 @@
 		B13F1AA425CBF43C009A5FCC /* LinkinParkRX */ = {
 			isa = PBXGroup;
 			children = (
-				B13F1AA525CBF43C009A5FCC /* AppDelegate.swift */,
-				B13F1AA725CBF43C009A5FCC /* SceneDelegate.swift */,
-				B13F1AA925CBF43C009A5FCC /* ViewController.swift */,
-				B13F1AAB25CBF43C009A5FCC /* Main.storyboard */,
-				B13F1AAE25CBF43D009A5FCC /* Assets.xcassets */,
-				B13F1AB025CBF43D009A5FCC /* LaunchScreen.storyboard */,
-				B13F1AB325CBF43D009A5FCC /* Info.plist */,
+				B13F1AC725CBF9A3009A5FCC /* Storyboards */,
+				B13F1ACA25CBF9D4009A5FCC /* View */,
+				B1220F5B25CC01B300F2D594 /* Model */,
+				B13F1ACB25CBF9DA009A5FCC /* ViewModel */,
+				B13F1ACC25CBF9E8009A5FCC /* Services */,
+				B1220F6925CC056E00F2D594 /* Helper */,
+				B13F1AC425CBF96B009A5FCC /* SupportingFiles */,
 			);
 			path = LinkinParkRX;
+			sourceTree = "<group>";
+		};
+		B13F1AC425CBF96B009A5FCC /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B1220F8925CC12F000F2D594 /* MessageView */,
+				B13F1AAE25CBF43D009A5FCC /* Assets.xcassets */,
+				B13F1AB325CBF43D009A5FCC /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		B13F1AC525CBF98D009A5FCC /* SistemControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B13F1AA525CBF43C009A5FCC /* AppDelegate.swift */,
+				B13F1AA725CBF43C009A5FCC /* SceneDelegate.swift */,
+			);
+			path = SistemControllers;
+			sourceTree = "<group>";
+		};
+		B13F1AC725CBF9A3009A5FCC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B13F1AD225CBFAC5009A5FCC /* Home.storyboard */,
+				B13F1AB025CBF43D009A5FCC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B13F1AC825CBF9C2009A5FCC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B13F1ADB25CBFB6F009A5FCC /* HomeVC.swift */,
+				B1220F8125CC0C7000F2D594 /* AlbumsCollectionViewVC.swift */,
+				B1220F7D25CC0C5400F2D594 /* TracksTableViewVC.swift */,
+				B13F1AC525CBF98D009A5FCC /* SistemControllers */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		B13F1ACA25CBF9D4009A5FCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B13F1AC825CBF9C2009A5FCC /* ViewController */,
+				B1220F5925CC01A100F2D594 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B13F1ACB25CBF9DA009A5FCC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B1220F7425CC076A00F2D594 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B13F1ACC25CBF9E8009A5FCC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E6B3B6F2306477F48E3415FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A1AD00BEECE5828BD284A /* Pods_LinkinParkRX.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +237,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B13F1AB625CBF43D009A5FCC /* Build configuration list for PBXNativeTarget "LinkinParkRX" */;
 			buildPhases = (
+				E160476CAEC62A2874A37C84 /* [CP] Check Pods Manifest.lock */,
 				B13F1A9E25CBF43C009A5FCC /* Sources */,
 				B13F1A9F25CBF43C009A5FCC /* Frameworks */,
 				B13F1AA025CBF43C009A5FCC /* Resources */,
+				ACDAC678E1470ED8FC3FED0C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,34 +291,85 @@
 			files = (
 				B13F1AB225CBF43D009A5FCC /* LaunchScreen.storyboard in Resources */,
 				B13F1AAF25CBF43D009A5FCC /* Assets.xcassets in Resources */,
-				B13F1AAD25CBF43C009A5FCC /* Main.storyboard in Resources */,
+				B13F1ABB25CBF471009A5FCC /* ReadMe.rtf in Resources */,
+				B1220F5125CBFFEE00F2D594 /* TrackTableViewCell.xib in Resources */,
+				B1220F8B25CC131600F2D594 /* MessageView.xib in Resources */,
+				B1220F5625CC000900F2D594 /* AlbumCollectionViewCell.xib in Resources */,
+				B13F1AD325CBFAC5009A5FCC /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACDAC678E1470ED8FC3FED0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkinParkRX/Pods-LinkinParkRX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkinParkRX/Pods-LinkinParkRX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinkinParkRX/Pods-LinkinParkRX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E160476CAEC62A2874A37C84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkinParkRX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B13F1A9E25CBF43C009A5FCC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B13F1AAA25CBF43C009A5FCC /* ViewController.swift in Sources */,
+				B13F1ADC25CBFB6F009A5FCC /* HomeVC.swift in Sources */,
+				B1220F7525CC076A00F2D594 /* HomeViewModel.swift in Sources */,
 				B13F1AA625CBF43C009A5FCC /* AppDelegate.swift in Sources */,
+				B1220F6E25CC069A00F2D594 /* Network.swift in Sources */,
+				B1220F7825CC0B4B00F2D594 /* ErrorInfo.swift in Sources */,
+				B1220F8225CC0C7000F2D594 /* AlbumsCollectionViewVC.swift in Sources */,
+				B1220F7225CC06A000F2D594 /* Extensiones.swift in Sources */,
 				B13F1AA825CBF43C009A5FCC /* SceneDelegate.swift in Sources */,
+				B1220F5025CBFFEE00F2D594 /* TrackTableViewCell.swift in Sources */,
+				B1220F8725CC12EA00F2D594 /* MessageView.swift in Sources */,
+				B1220F8E25CC14FE00F2D594 /* LinkinData.swift in Sources */,
+				B1220F5525CC000900F2D594 /* AlbumCollectionViewCell.swift in Sources */,
+				B1220F7E25CC0C5400F2D594 /* TracksTableViewVC.swift in Sources */,
+				B1220F6725CC048500F2D594 /* Album.swift in Sources */,
+				B1220F5D25CC01C800F2D594 /* Track.swift in Sources */,
+				B1220F7025CC069D00F2D594 /* ReactiveExtensiones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B13F1AAB25CBF43C009A5FCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B13F1AAC25CBF43C009A5FCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B13F1AB025CBF43D009A5FCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,12 +499,13 @@
 		};
 		B13F1AB725CBF43D009A5FCC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 343B98C5C00F9EA3A919438A /* Pods-LinkinParkRX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB797Q3L2X;
-				INFOPLIST_FILE = LinkinParkRX/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinkinParkRX/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +513,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moses.LinkinParkRX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B13F1AB825CBF43D009A5FCC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D18B65BAE1F778B7BEBA50D2 /* Pods-LinkinParkRX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MB797Q3L2X;
-				INFOPLIST_FILE = LinkinParkRX/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/LinkinParkRX/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +533,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.moses.LinkinParkRX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
