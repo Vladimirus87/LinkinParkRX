@@ -33,14 +33,12 @@ class AlbumsCollectionViewVC: UIViewController {
         layout.itemSize = cellSize
         layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
         layout.minimumLineSpacing = 10
-        layout.minimumInteritemSpacing = 10
         albumsCollectionView.setCollectionViewLayout(layout, animated: false)
         albumsCollectionView.reloadData()
     }
     
 
     private func setupBindings() {
-        
         let nib = UINib(nibName: cellIdentifier, bundle: nil)
         albumsCollectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
         

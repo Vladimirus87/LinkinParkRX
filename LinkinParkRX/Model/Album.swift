@@ -17,14 +17,3 @@ struct Album: Codable {
         case artist
     }
 }
-
-
-
-// MARK: Convenience initializers
-
-extension Album {
-    init?(data: Data) {
-        guard let me = try? JSONDecoder().decode(Album.self, from: data) else { return nil }
-        self = me
-    }
-}

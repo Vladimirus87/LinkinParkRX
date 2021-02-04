@@ -8,21 +8,22 @@
 //
 
 import Foundation
-import RxSwift
-import RxCocoa
+import Alamofire
 
 
 class APIManager {
-    
-    
+
     static let baseUrl = "https://gist.githubusercontent.com/mohammadZ74/"
     
-    typealias parameters = [String:Any]
+    typealias Parameters = [String: Any]
+    typealias Headers = [String: String]
+    
     
     enum ApiResult {
         case success(Data)
         case failure(RequestError)
     }
+    /*
     enum HTTPMethod: String {
         case options = "OPTIONS"
         case get     = "GET"
@@ -34,6 +35,8 @@ class APIManager {
         case trace   = "TRACE"
         case connect = "CONNECT"
     }
+ */
+    
     enum RequestError: Error {
         case unknownError
         case connectionError
@@ -44,15 +47,15 @@ class APIManager {
         case serverError
         case serverUnavailable
     }
+    
     static func requestData(url: String,
                             method: HTTPMethod,
-                            parameters: parameters?,
+                            parameters: Parameters? = nil,
+                            header: Headers? = nil,
                             completion: @escaping (ApiResult)->Void) {
         
-        let header =  ["Content-Type": "application/x-www-form-urlencoded"]
-        
         var urlRequest = URLRequest(url: URL(string: baseUrl+url)!, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
-        urlRequest.allHTTPHeaderFields = header
+        urlRequest.allHTTPHeaderFields = header ?? [:]
         urlRequest.httpMethod = method.rawValue
         if let parameters = parameters {
             let parameterData = parameters.reduce("") { (result, param) -> String in
@@ -81,4 +84,6 @@ class APIManager {
             }
         }.resume()
     }
+
+
 }

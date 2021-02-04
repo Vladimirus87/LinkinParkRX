@@ -52,6 +52,35 @@ extension UIViewController {
         viewController.removeFromParent()
     }
 }
+
+
+extension UIViewController {
+    func startAnimating() {
+        let animateLoading = UIActivityIndicatorView(style: .medium)
+        animateLoading.color = .white
+        view.addSubview(animateLoading)
+        view.bringSubviewToFront(animateLoading)
+        animateLoading.translatesAutoresizingMaskIntoConstraints = false
+        animateLoading.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        animateLoading.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        animateLoading.restorationIdentifier = "loadingView"
+        animateLoading.startAnimating()
+    }
+    
+    func stopAnimating() {
+        for item in view.subviews
+            where item.restorationIdentifier == "loadingView" {
+                UIView.animate(withDuration: 0.3, animations: {
+                    item.alpha = 0
+                }) { (_) in
+                    item.removeFromSuperview()
+                }
+        }
+    }
+    
+}
+
+/*
 extension UIView {
     @IBInspectable public var borderColor: UIColor? {
         get {
@@ -180,6 +209,8 @@ extension UIView {
         }
     }
 }
+ 
+ 
 public extension UIImageView {
     func loadImage(fromURL url: String) {
         guard let imageURL = URL(string: url) else {
@@ -216,3 +247,4 @@ public extension UIImageView {
                           completion: nil)
     }
 }
+*/

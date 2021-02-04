@@ -99,10 +99,10 @@
 		B1220F5B25CC01B300F2D594 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B1220F8D25CC14FE00F2D594 /* LinkinData.swift */,
 				B1220F5C25CC01C800F2D594 /* Track.swift */,
 				B1220F6625CC048500F2D594 /* Album.swift */,
 				B1220F7725CC0B4B00F2D594 /* ErrorInfo.swift */,
-				B1220F8D25CC14FE00F2D594 /* LinkinData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,7 +112,6 @@
 			children = (
 				B1220F6B25CC057E00F2D594 /* Extensiones.swift */,
 				B1220F6A25CC057E00F2D594 /* ReactiveExtensiones.swift */,
-				B1220F6C25CC05EE00F2D594 /* Network.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -124,6 +123,14 @@
 				B1220F8525CC12EA00F2D594 /* MessageView.xib */,
 			);
 			path = MessageView;
+			sourceTree = "<group>";
+		};
+		B1220F9125CC2E1D00F2D594 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1220F8925CC12F000F2D594 /* MessageView */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		B13F1A9925CBF43C009A5FCC = {
@@ -162,7 +169,6 @@
 		B13F1AC425CBF96B009A5FCC /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				B1220F8925CC12F000F2D594 /* MessageView */,
 				B13F1AAE25CBF43D009A5FCC /* Assets.xcassets */,
 				B13F1AB325CBF43D009A5FCC /* Info.plist */,
 			);
@@ -202,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				B13F1AC825CBF9C2009A5FCC /* ViewController */,
+				B1220F9125CC2E1D00F2D594 /* View */,
 				B1220F5925CC01A100F2D594 /* Cell */,
 			);
 			path = View;
@@ -218,6 +225,7 @@
 		B13F1ACC25CBF9E8009A5FCC /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				B1220F6C25CC05EE00F2D594 /* Network.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";

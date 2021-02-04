@@ -37,11 +37,17 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         self.view.addBlurArea(area: self.view.frame, style: .dark)
         setupBindings()
-        homeViewModel.requestData()
+        homeViewModel.AFRequestData()
     }
     
 
     private func setupBindings() {
+        
+        // binding loading to vc
+        homeViewModel.loading
+            .bind(to: self.rx.isAnimating)
+            .disposed(by: bag)
+        
         // observing errors to show
         homeViewModel.error
             .observeOn(MainScheduler.instance)

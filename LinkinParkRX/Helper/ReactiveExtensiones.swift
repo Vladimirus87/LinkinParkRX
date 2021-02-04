@@ -13,8 +13,8 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-/*
-extension UIViewController: loadingViewable {}
+
+//extension UIViewController: loadingViewable {}
 
 extension Reactive where Base: UIViewController {
     
@@ -30,5 +30,5 @@ extension Reactive where Base: UIViewController {
     }
     
 }
-*/
+
 
